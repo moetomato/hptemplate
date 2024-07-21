@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
+    font-size: 20px;
+    margin: 0;
+}
+
+.font {
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1;
+    font-style: normal;
+}
+
+.main img {
+    width: 100%;
+}
+
+.main {
+    padding: 10px 0 40px 0;
+}
+
+.main h2 {
+    color: white;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.table {
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    border-radius: 30px;
+    width: 250px;
+    height: 250px;
+    margin: 30px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.table h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.table ul {
+    margin: 30px 0;
+    padding: 0;
+    font-size: 25px;
+    list-style: none;
+}
+
+.table a {
+    color: gray;
+    transition: all 1s;
+}
+
+.table a:hover {
+    color: pink;
+}
+
+
+.contents {
+    background: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.contents p {
+    padding-left: 5px;
+    border-left: solid 3px #be82da;
+}
+
+.contents b {
+    color: rgb(233, 139, 154);
+}
+
+.contents ol {
+    margin: 10px 0;
+}
+
+.heart {
+    width: 30px;
+    margin: 40px auto;
+}
+
+.heart div {
+    width: 30px;
+    /* 正方形を作る */
+    height: 30px;
+    /* 正方形を作る */
+    position: relative;
+    /* 基準位置とする */
+    margin-bottom: 10px;
+}
+
+.heart div::before,
+.heart div::after {
+    content: "";
+    /* 疑似要素に必須 */
+    width: 50%;
+    /* ハートの丸い部分の大きさにかかわる */
+    height: 80%;
+    /* ハートの高さにかかわる */
+    /* background: #E0548E; */
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+    /* ハートの色 */
+    border-radius: 25px 25px 0 0;
+    /* ハートの半円を生成 */
+    display: block;
+    /* ブロック要素にする */
+    position: absolute;
+    /* 相対位置に指定 */
+}
+
+.heart div::before {
+    transform: rotate(-45deg);
+    /* 左に回転 */
+    left: 14%;
+    /* 左からの位置を指定 */
+}
+
+.heart div::after {
+    transform: rotate(45deg);
+    /* 右に回転 */
+    right: 14%;
+    /* 右からの位置を指定 */
+}
+
+/* .circle div {
+    background: white;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+} */

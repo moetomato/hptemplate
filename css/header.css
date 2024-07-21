@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.header {
+    padding: 100px 5px;
+    background: #2a5c84;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    color: rgb(255, 250, 250);
+    text-align: center;
+}
+
+.header a {
+    border: solid 1px white;
+    border-radius: 10px;
+    color: white;
+    margin: 0 3px;
+    padding: 5px 10px;
+    transition: all .5s;
+}
+
+.header a:hover {
+    color: pink;
+}
